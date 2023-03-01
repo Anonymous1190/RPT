@@ -1,1 +1,0 @@
-This is checkpoints for pretrained backbone
