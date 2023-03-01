@@ -1,7 +1,7 @@
 # RPT
 Code for the paper: "Few-Shot Medical Image Segmentation via Region-enhanced Prototypical Transformer" 
 
-![](./RPT.png)
+
 
 
 #### Abstract
