@@ -14,10 +14,7 @@ def one_hot(label, n_classes, requires_grad=True):
 
 
 class BoundaryLoss(nn.Module):
-    """Boundary Loss proposed in:
-    Alexey Bokhovkin et al., Boundary Loss for Remote Sensing Imagery Semantic Segmentation
-    https://arxiv.org/abs/1905.07852
-    """
+    
 
     def __init__(self, theta0=3, theta=5):
         super().__init__()
