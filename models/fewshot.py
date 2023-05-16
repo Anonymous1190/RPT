@@ -102,7 +102,7 @@ class FewShotSeg(nn.Module):
 
             # Get query predictions #
             qry_pred = [torch.stack(
-                [self.getPred(qry_fts[n][epi], fg_prototypes[n][way][epi], self.thresh_pred[way])
+                [self.getPred(qry_fts[n][epi], supp_proto[n][way][epi], self.thresh_pred[way])
                  for way in range(self.n_ways)], dim=1) for n in range(len(qry_fts))]  # N x Wa x H' x W'
 
             # Combine predictions of different feature maps #
